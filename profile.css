@@ -1,0 +1,169 @@
+:root {
+    --primary: #2b6777;
+    --secondary: #c8d8e4;
+    --background: #ffffff;
+    --text-color: #2b6777;
+    --button-color: #2b6777; 
+    --button-hover: #c8d8e4;
+    --button-shadow: black
+
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary);
+    color: var(--background);
+    padding: 1rem 0;
+    animation: fadeInDown 1s ease-out;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header nav {
+    display: flex;
+}
+
+.nav-btn {
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    background-color: var(--button-color);
+    color: var(--background);
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-left: 1.5rem;
+    box-shadow: 0px 4px 8px var(--button-shadow);
+}
+
+.nav-btn:hover {
+    background-color: var(--button-hover);
+    transform: scale(1.05);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    animation: fadeInLeft 1s ease-out;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--background);
+}
+
+#profile {
+    padding: 40px 20px;
+    background-color: var(--secondary);
+    animation: fadeIn 1s ease-out;
+}
+
+#profile .container {
+    background-color: var(--background);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#profile h2 {
+    margin-bottom: 20px;
+    color: var(--primary);
+    text-align: center;
+    animation: fadeInUp 1s ease-out;
+}
+
+.typewriter {
+    overflow: hidden;
+    border-right: .15em solid black; /* Caret color */
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+.profile-box {
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--primary);
+}
+
+.profile-box strong {
+    display: inline-block;
+    width: 200px;
+    color: var(--text-color);
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--background);
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    animation: fadeInUp 1s ease-out;
+}
+
+footer .social-media {
+    margin-top: 10px;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer .social-media img {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}

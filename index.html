@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamaaoo.com</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="LOGO/Mainlogo.png" alt="Kamaaoo Logo">
+        <h1>Kamaaoo.com</h1>
+      </div>
+      <nav>
+        <div class="nav-buttons">
+          <button class="nav-btn" onclick="window.location.href='About.html'">About Us</button>
+          <button class="nav-btn" onclick="window.location.href='Login.html'">Login</button>
+          <button class="nav-btn" onclick="window.location.href='signup.html'">Entrepreneur / Business Sign-up</button>
+          <button class="nav-btn" onclick="window.location.href='InvestorSignup.html'">Investor Sign-up</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home">
+    <div class="hero">
+      <h2 class="typewriter" data-text="POWERFUL MONEY MAKE PEOPLE POWERFUL"></h2>
+      <p>Your one-stop destination for financial growth and insights.</p>
+    </div>
+  </section>
+
+  <section class="dual-sections">
+    <div id="entrepreneurs">
+      <h2 class="typewriter" data-text="For Entrepreneurs"></h2>
+      <p>Get resources to build, fund, and grow your business.</p>
+    </div>
+    <div id="investors">
+      <h2 class="typewriter" data-text="For Investors"></h2>
+      <p>Explore investment opportunities and market insights.</p>
+    </div>
+  </section>
+
+  <section id="subscription-section">
+    <h2>Our Subscription Plans</h2>
+    <p>Discover exclusive benefits designed to empower your growth. Select the perfect plan for your needs.</p>
+    <button class="cta-btn" onclick="openSubscriptionPopup()">View Subscription Plans</button>
+</section>
+
+<div id="subscription-popup" class="popup-overlay">
+  <div class="popup-content">
+      <span class="close-btn" onclick="closeSubscriptionPopup()">&times;</span>
+      <h3>Choose Your Subscription Plan</h3>
+      <div class="subscription-box">
+          <div class="subscription-plan">
+              <h4>GOLD</h4>
+              <p>Price: ₹499 for 14 DAYS</p>
+              <ul>
+                  <li>Create a stellar pitch using our online form with images, documents, and videos.</li>
+                  <li>Your pitch will be listed on our India site.</li>
+                  <li>Your pitch will be emailed to all the matching investors on our India network. This means more exposure and more interest.</li>
+                  <li>Your pitch will appear higher in all of lists and search results. More traffic = More interest = More Investment!</li>
+                  <li>Gain access to the contact details of investors who show interest.</li>
+              </ul>
+              <button class="cta-btn" onclick="subscribeNow()">Subscribe Now</button>
+          </div>
+          <div class="subscription-plan">
+              <h4>PREMIUM</h4>
+              <p>Price: ₹999 per month</p>
+              <ul>
+                  <li>All the benefits of Pro plus:</li>
+                  <li>Your pitch will be listed on all our networks, which cover 90 countries worldwide.</li>
+                  <li>We have over 300,000 investors worldwide across all our networks. Your pitch will be emailed to ALL the investors whose criteria match your pitch.</li>
+              </ul>
+              <button class="cta-btn" onclick="subscribeNow()">Subscribe Now</button>
+          </div>
+          <div class="subscription-plan">
+              <h4>Executive</h4>
+              <p>Price: ₹1999 for 60 DAYS</p>
+              <ul>
+                  <li>All the benefits of Global Pro plus:</li>
+                  <li>Your pitch is emailed to ALL the investors on our India site in its own private mailout.</li>
+                  <li>Your pitch appears at the top of all search results across all 40 of our networks worldwide.</li>
+                  <li>An expert from our team will provide detailed feedback on your pitch before it goes live and then help create the investor mailout.</li>
+              </ul>
+              <button class="cta-btn" onclick="subscribeNow()">Subscribe Now</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<section id="testimonials-section">
+  <h2>What Our Users Say</h2>
+  <div class="testimonials">
+      <div class="testimonial">
+          <p>"Kamaaoo.com has been instrumental in helping me find the right investors for my startup. The platform is user-friendly and the resources are top-notch!"</p>
+          <span>- Priya Sharma, Entrepreneur</span>
+      </div>
+      <div class="testimonial">
+          <p>"As an investor, Kamaaoo.com has given me access to a wide range of investment opportunities. The platform makes it easy to connect with promising startups."</p>
+          <span>- Rohan Mehta, Investor</span>
+      </div>
+      <div class="testimonial">
+          <p>"I love how Kamaaoo.com bridges the gap between entrepreneurs and investors. The support and exposure my business received were incredible."</p>
+          <span>- Anjali Verma, Business Owner</span>
+      </div>
+      <div class="testimonial">
+          <p>"The subscription plans on Kamaaoo.com are worth every penny. The Global Pro plan really helped my business reach international investors."</p>
+          <span>- Vishal Gupta, Startup Founder</span>
+      </div>
+      <div class="testimonial">
+          <p>"Kamaaoo.com provided me with valuable insights and connections. The platform is a must-have for any entrepreneur looking to grow their business."</p>
+          <span>- Neha Joshi, Entrepreneur</span>
+      </div>
+      <div class="testimonial">
+          <p>"Investing in startups has never been easier. Kamaaoo.com offers a great platform to discover and support innovative businesses."</p>
+          <span>- Sameer Malhotra, Investor</span>
+      </div>
+  </div>
+</section>
+
+
+  <section id="download-app">
+    <h2>Download Our App</h2>
+    <p>Get access to all our features on the go. Download our app now!</p>
+    <a href="#" class="cta">Download Now</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Kamaaoo.com. All rights reserved.</p>
+    <div class="social-media">
+      <a href="#"><img src="LOGO/instalogo.png" alt="Instagram"></a>
+      <a href="#"><img src="LOGO/linkdinlogo.png" alt="LinkedIn"></a>
+      <a href="#"><img src="LOGO/ytlogo.png" alt="YouTube"></a>
+      <a href="#"><img src="LOGO/twitterlogo.png" alt="Twitter"></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

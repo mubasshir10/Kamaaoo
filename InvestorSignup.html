@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investor Sign-Up - Kamaaoo.com</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="LOGO/Mainlogo.png" alt="Kamaaoo Logo">
+        <h1>Kamaaoo.com</h1>
+      </div>
+      <nav>
+        <div class="nav-buttons">
+          <button class="nav-btn" onclick="window.location.href='index.html'">Home</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="signup">
+    <div class="container">
+      <h2 class="typewriter" data-text="Investor Sign-Up">Investor Sign-Up</h2>
+      <p>Join our platform and find potential business opportunities.</p>
+      <form action="investor-profile.html" method="GET">
+        <ul>
+          <li>
+            <label for="investor-name">Name:</label>
+            <input type="text" id="investor-name" name="name" required>
+          </li>
+          <li>
+            <label for="investor-email">Email:</label>
+            <input type="email" id="investor-email" name="email" required>
+          </li>
+          <li>
+            <label for="investor-contact">Contact No:</label>
+            <input type="text" id="investor-contact" name="contact" required>
+          </li>
+          <li>
+            <label for="investor-type">Type of Business:</label>
+            <input type="text" id="investor-type" name="type" required>
+          </li>
+          <li>
+            <label for="investor-industry">Want to invest in which Industry:</label>
+            <input type="text" id="investor-industry" name="industry" required>
+          </li>
+          <li>
+            <label for="investor-location">Location:</label>
+            <input type="text" id="investor-location" name="location" required>
+          </li>
+          <li>
+            <label for="investment-range">Investment range:</label>
+            <input type="text" id="investment-range" name="investment-range" required>
+          </li>
+          <li>
+            <label for="investment-insurance">Insurance for investment:</label>
+            <select id="investment-insurance" name="investment-insurance" required>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </li>
+          <li>
+            <label for="investor-username">Username:</label>
+            <input type="text" id="investor-username" name="username" required>
+          </li>
+          <li>
+            <label for="investor-password">Password:</label>
+            <input type="password" id="investor-password" name="password" required>
+          </li>
+          <li>
+            <button type="submit" class="cta">Sign Up</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Kamaaoo.com. All rights reserved.</p>
+    <div class="social-media">
+      <a href="#"><img src="LOGO/instalogo.png" alt="Instagram"></a>
+      <a href="#"><img src="LOGO/linkdinlogo.png" alt="LinkedIn"></a>
+      <a href="#"><img src="LOGO/ytlogo.png" alt="YouTube"></a>
+      <a href="#"><img src="LOGO/twitterlogo.png" alt="Twitter"></a>
+    </div>
+  </footer>
+</body>
+</html>

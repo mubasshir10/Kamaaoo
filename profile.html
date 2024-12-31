@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - Kamaaoo.com</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="LOGO/Mainlogo.png" alt="Kamaaoo Logo">
+        <h1>Kamaaoo.com</h1>
+      </div>
+      <nav>
+        <div class="nav-buttons">
+          <button class="nav-btn" onclick="window.location.href='index.html'">Home</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="profile">
+    <div class="container">
+      <h2 class="typewriter" data-text="Your Profile"></h2>
+      <p>Here is the information you provided:</p>
+      <div class="profile-box">
+        <strong>Username:</strong> <span id="profile-username"></span>
+      </div>
+      <div class="profile-box">
+        <strong>Name:</strong> <span id="profile-name"></span>
+      </div>
+      <div class="profile-box">
+        <strong>Email:</strong> <span id="profile-email"></span>
+      </div>
+      <div class="profile-box">
+        <strong>Contact No:</strong> <span id="profile-contact"></span>
+      </div>
+      <div class="profile-box">
+        <strong>Type of Business:</strong> <span id="profile-type"></span>
+      </div>
+      <div class="profile-box">
+        <strong>Industry:</strong> <span id="profile-industry"></span>
+      </div>
+      <div class="profile-box">
+        <strong>Location:</strong> <span id="profile-location"></span>
+      </div>
+      <div class="profile-box">
+        <strong>Age of Business:</strong> <span id="profile-age"></span>
+      </div>
+      <div class="profile-box">
+        <strong>Gross Profit & Net Profit:</strong> <span id="profile-profits"></span>
+      </div>
+      <div class="profile-box">
+        <strong>Description:</strong> <span id="profile-description"></span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Kamaaoo.com. All rights reserved.</p>
+    <div class="social-media">
+      <a href="#"><img src="LOGO/instalogo.png" alt="Instagram"></a>
+      <a href="#"><img src="LOGO/linkdinlogo.png" alt="LinkedIn"></a>
+      <a href="#"><img src="LOGO/ytlogo.png" alt="YouTube"></a>
+      <a href="#"><img src="LOGO/twitterlogo.png" alt="Twitter"></a>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      document.getElementById('profile-username').textContent = urlParams.get('username');
+      document.getElementById('profile-name').textContent = urlParams.get('name');
+      document.getElementById('profile-email').textContent = urlParams.get('email');
+      document.getElementById('profile-contact').textContent = urlParams.get('contact');
+      document.getElementById('profile-type').textContent = urlParams.get('type');
+      document.getElementById('profile-industry').textContent = urlParams.get('industry') === 'other' ? urlParams.get('other-industry') : urlParams.get('industry');
+      document.getElementById('profile-location').textContent = urlParams.get('location');
+      document.getElementById('profile-age').textContent = urlParams.get('age');
+      document.getElementById('profile-profits').textContent = urlParams.get('profits');
+      document.getElementById('profile-description').textContent = urlParams.get('description');
+    });
+  </script>
+</body>
+</html>

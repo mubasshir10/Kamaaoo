@@ -1,0 +1,121 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #2b6777;
+  }
+  
+  header {
+    background-color: #2b6777;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    color: white;
+    margin: 0;
+  }
+  
+  .nav-buttons .nav-btn {
+    padding: 0.5rem 1rem;
+    background-color: #c8d8e4;
+    color: #2b6777;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-buttons .nav-btn:hover {
+    background-color: #52ab98;
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  /* About Us Section */
+  #about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    gap: 2rem;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-text {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .about-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .about-image img {
+    width: 300px;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .about-image img:hover {
+    transform: rotate(360deg);
+  }
+  
+  .about-image h4 {
+    margin: 1rem 0 0;
+    font-size: 1.5rem;
+  }
+  
+  .about-image p {
+    margin: 0.5rem 0 0;
+    color: #52ab98;
+    font-size: 1rem;
+  }
+  
+  /* Contact Section */
+  #contact {
+    text-align: center;
+    padding: 2rem;
+    background-color: #2b6777;
+    color: white;
+  }
+  
+  .contact-details p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #2b6777;
+    color: white;
+    margin-top: 2rem;
+  }
+  

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrepreneur and Investor Sign-Up - Kamaaoo.com</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="LOGO/Mainlogo.png" alt="Kamaaoo Logo">
+        <h1>Kamaaoo.com</h1>
+      </div>
+      <nav>
+        <div class="nav-buttons">
+          <button class="nav-btn" onclick="window.location.href='index.html'">Home</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section id="signup">
+    <div class="container">
+      <h2 class="typewriter" data-text="Entrepreneur Sign-Up"></h2>
+      <p>Join our platform and connect with potential investors.</p>
+      <form action="profile.html" method="GET">
+        <ul>
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </li>
+          <li>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </li>
+          <li>
+            <label for="contact">Contact No:</label>
+            <input type="text" id="contact" name="contact" required>
+          </li>
+          <li>
+            <label for="type">Type of Business:</label>
+            <select id="type" name="type" required>
+              <option value="startup">Startup</option>
+              <option value="small-business">Small Business</option>
+              <option value="corporation">Corporation</option>
+            </select>
+          </li>
+          <li>
+            <label for="industry">Industry:</label>
+            <select id="industry" name="industry" required onchange="checkOtherIndustry(this)">
+              <option value="tech">Tech</option>
+              <option value="finance">Finance</option>
+              <option value="healthcare">Healthcare</option>
+              <option value="education">Education & Classes</option>
+              <option value="tours-travel">Tours & Travel</option>
+              <option value="electronics-repair">Electronics Repair & Services</option>
+              <option value="health-beauty">Health & Beauty</option>
+              <option value="home-renovation">Home Renovation & Repair</option>
+              <option value="cleaning-pest-control">Cleaning & Pest Control</option>
+              <option value="legal-documentation">Legal & Documentation Services</option>
+              <option value="packers-movers">Packers & Movers</option>
+              <option value="other-services">Other Services</option>
+              <option value="books">Books</option>
+              <option value="gym-fitness">Gym & Fitness</option>
+              <option value="musical-instruments">Musical Instruments</option>
+              <option value="sports-equipment">Sports Equipment</option>
+              <option value="other">Other (Please Specify)</option>
+            </select>
+            <input type="text" id="other-industry" name="other-industry" placeholder="Please specify your industry" style="display:none;">
+          </li>
+          <li>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+          </li>
+          <li>
+            <label for="age">Age of Business:</label>
+            <input type="text" id="age" name="age" required>
+          </li>
+          <li>
+            <label for="profits">Gross Profit & Net Profit:</label>
+            <input type="text" id="profits" name="profits" required>
+          </li>
+          <li>
+            <label for="description">Describe your business in brief:</label>
+            <textarea id="description" name="description" required></textarea>
+          </li>
+          <li>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+          </li>
+          <li>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+          </li>
+          <li>
+            <button type="submit" class="cta">Sign Up</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </section>
+
